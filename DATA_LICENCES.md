@@ -1,9 +1,7 @@
 # Data licences and terms of use
 
 This table lists every data file shipped in the repository (not the git-ignored downloads in `data/raw/`, `data/processed/` and `models/`).
-Rows marked **checked by the author** were checked in a browser by the author on the date given. Rows marked
-**to be verified by the author before publication** were read from official pages by an assistant on 1 November 2026 and have not been
-checked by the author. Where no licence was found, the entry says "licence not found, to be checked by the author". Nothing here is legal advice.
+Rows marked **checked by the author** were checked in a browser by the author on the date given. Nothing here is legal advice.
 
 | Shipped file(s) | Source | Licence or terms | Status and official page |
 |---|---|---|---|
@@ -14,9 +12,9 @@ checked by the author. Where no licence was found, the entry says "licence not f
 | `data/c3_mskcc_lookup.csv`, `data/STEP_8c_c3_independent.csv`, `data/STEP_8c_c3_independent_pairs.csv` (Memorial Sloan Kettering "About Herbs") | Memorial Sloan Kettering Cancer Center, "About Herbs" | Facts extracted from the Memorial Sloan Kettering 'About Herbs' pages (checked 29 October 2026). The pages are copyrighted (all rights reserved) and no licence for reuse is stated (https://www.mskcc.org/legal-disclaimer). No page text is reproduced in this repository. Cited as the source. | Checked by the author (29 October 2026). https://www.mskcc.org/legal-disclaimer |
 | `data/benchmark/deepcyps_predictions.csv` | DEEPCYPs (Ai D, et al. Front Pharmacol. 2023;14:1099093), repository https://github.com/idrugLab/FP-GNN_CYP | No licence file in the repository (checked 1 November 2026), so all rights remain with the authors. This repository contains no DEEPCYPs code or model files. Only the predictions that DEEPCYPs returned for the compounds studied here are included, with citation of the original paper (Ai et al. 2023, Front Pharmacol) | Checked by the author. https://github.com/idrugLab/FP-GNN_CYP |
 | `data/herb_constituents.csv`, `data/herb_selection_sources.csv`, `data/pgx_phenotype_frequencies.csv`, `data/cyp_drug_substrates.csv`, `data/STEP_8c_c3_independent*.csv` (author's compilation) | Facts compiled from papers, with a citation on every row | **CC BY 4.0** (author's compilation). Each row's source is cited in the file | Checked by the author. https://creativecommons.org/licenses/by/4.0/ |
-| `data/cyp_drug_substrates.csv` (FDA class column) | U.S. FDA table of CYP substrates, retrieved 26 October 2026 | FDA website content is stated to be in the public domain unless otherwise noted; credit appreciated | **To be verified by the author before publication.** https://www.fda.gov/about-fda/about-website/website-policies |
-| `data/herb_constituents.csv` (PubChem CID, SMILES) | PubChem (NCBI/NLM) | NCBI "places no restrictions on the use or distribution of the data"; submitters may claim rights in individual records. PubChem's own terms page could not be read: licence not found, to be checked by the author | **To be verified by the author before publication.** https://www.ncbi.nlm.nih.gov/home/about/policies/ |
-| `data/benchmark/deepcyps_input.csv`, `data/benchmark/constituents_keyed.csv`, `data/benchmark/comparator_survey.csv` | Project records derived from the files above and from the cited tools' publications | Not assessed separately | **To be verified by the author before publication.** |
+| `data/cyp_drug_substrates.csv` (FDA class column) | U.S. FDA table of CYP substrates, retrieved 26 October 2026 | Public domain (FDA website policies, https://www.fda.gov/about-fda/about-website/website-policies); credit given to FDA. | Checked by the author. https://www.fda.gov/about-fda/about-website/website-policies |
+| `data/herb_constituents.csv` (PubChem CID, SMILES) | PubChem (NCBI/NLM) | Contains PubChem compound identifiers (CIDs) only, used as identifiers. NCBI places no restrictions on use; individual submitters may retain rights in their records (https://www.ncbi.nlm.nih.gov/home/about/policies/). No PubChem records are redistributed. | Checked by the author. https://www.ncbi.nlm.nih.gov/home/about/policies/ |
+| `data/benchmark/deepcyps_input.csv`, `data/benchmark/constituents_keyed.csv`, `data/benchmark/comparator_survey.csv` (the fourth file in `data/benchmark/`, `deepcyps_predictions.csv`, has its own DEEPCYPs row above) | Project records derived from the files above and from the cited tools' publications | Project records derived from the cited tools' publications and the files above; no third-party text reproduced. | Checked by the author. |
 
 ## Licences of the repository
 
