@@ -1,0 +1,17 @@
+# Python 3.13.17 (tested). Versions are those installed when the reference results were produced.
+numpy==2.5.4
+pandas==3.1.0
+scipy==1.18.1
+scikit-learn==1.9.1
+xgboost==3.4.1
+rdkit==2026.9.1
+shap==0.54.1
+matplotlib==3.11.2
+joblib==1.6.0
+openpyxl==3.1.5
+PyTDC==0.3.6
+requests==2.34.2
+# to run the notebook from the command line
+ipykernel==7.4.0
+nbconvert==7.17.2
+nbformat==5.11.1
