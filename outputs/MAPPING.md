@@ -41,6 +41,11 @@ The numbers in the last column are those of the reference run (31 October 2026).
 | `tableS21_activity_before.csv`, `tableS22_activity_after_moderate.csv` | 7.2 | Activity-score distributions before and after a moderate inhibitor | Phenoconversion |
 | `tableS23_threshold_sweep.csv` | 7.2 | Converted fraction across thresholds and conventions | Instability of threshold-based counts |
 | `tableS24_deepcyps_agreement_by_domain.csv` | 8 | Agreement with DEEPCYPs for compounds inside and outside the applicability domain of each enzyme | Tool comparison |
+| `tableS25_baseline_all_enzymes.csv` | 10 | Scaffold-grouped 5-fold cross-validation of logistic regression and XGBoost for all five enzymes: fold mean and sd of AUROC, AUPRC, sensitivity, specificity and balanced accuracy | Baseline comparison (DOME) |
+| `tableS26_cv_confidence_intervals.csv` | 10 | Per enzyme, model and metric: fold mean, sd, 95% t-interval over the 5 folds, pooled out-of-fold value and 95% bootstrap interval (1,000 resamples, seed 42) | Confidence intervals (DOME) |
+| `tableS27_train_vs_test.csv` | 10 | Per enzyme, model and metric: mean on the training part and on the held-out part of the folds, and the gap | Over-fitting check (DOME) |
+| `tableS28_xgboost_vs_logreg_paired.csv` | 10 | Paired fold-wise difference XGBoost minus logistic regression, 95% t-interval, paired t-test and Nadeau-Bengio corrected p (5 folds: little power) | Model comparison (DOME) |
+| `tableS29_cv_fold_scores.csv` | 10 | Every fold, model, part (train, test) and metric behind tables S25 to S28 | Fold-level scores |
 | `data_facts.json` | 9 | Every count quoted by the web app: training counts, herbs (17 herbs, 71 listings, 69 different compounds, 53 assessable), drugs (97 drugs, 99 entries, 59 sensitive, 40 moderate, 6 narrow therapeutic index), compounds also in training data (8 of 69), lab comparison (248, 125, 123; 33, 82, 308; 115 of 423), herb guide (12 checked, 8 with a page, 4 without; 29 October 2026) | Numbers in the web app |
 
 ## Figures

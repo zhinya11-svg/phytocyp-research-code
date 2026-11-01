@@ -14,7 +14,7 @@ Everything is produced by one notebook, `phytocyp_pipeline.ipynb`, which runs fr
 | Path | What it holds |
 |---|---|
 | `phytocyp_pipeline.ipynb` | The whole analysis: data, models, evaluation, herb-drug pairs and checks, figures and tables |
-| `src/` | Functions used by the notebook (`cyp_pipeline.py` cleaning, features, training and validation; `mixture.py`; `calibration.py`; `prior_documentation.py`; `pgx_convert.py`; `phenoconversion.py`) |
+| `src/` | Functions used by the notebook (`cyp_pipeline.py` cleaning, features, training and validation; `mixture.py`; `calibration.py`; `prior_documentation.py`; `pgx_convert.py`; `phenoconversion.py`; `dome_analysis.py` baselines, confidence intervals and train-versus-held-out performance for the five enzymes) |
 | `data/` | Small curated input tables (see "Data") |
 | `scripts/` | Optional steps: ChEMBL re-download, DEEPCYPs run, publish-safety scan |
 | `outputs/` | Written by the notebook; `outputs/MAPPING.md` says which output feeds which number |
@@ -103,7 +103,7 @@ DEEPCYPs was trained on the same PubChem AID 1851 data as the models here, so th
 
 ## Outputs
 
-`outputs/` is created by the notebook. `outputs/MAPPING.md` lists every file with its section, contents and the result it feeds. Output file names are provisional and may change before publication. `outputs/data_facts.json` holds every count quoted by the accompanying web app.
+`outputs/` is created by the notebook. `outputs/MAPPING.md` lists every file with its section, contents and the result it feeds. Output file names are provisional and may change before publication. `outputs/data_facts.json` holds every count quoted by the accompanying web app. Section 10 of the notebook adds the baseline, confidence-interval and training-versus-held-out tables (`tableS25` to `tableS29`), which are written to `outputs/` when the notebook runs.
 
 Reference values from the run that produced the numbers above: scaffold-grouped cross-validation sensitivity at the 0.5 threshold 83.5% (CYP1A2), 72.0% (CYP2C9), 82.7% (CYP2C19),
 49.0% (CYP2D6) and 76.8% (CYP3A4); 423 herb-drug pairs; 33 agree, 82 disagree and 308 have no published test; 53 of 71 compounds assessable; 8 of 69 compounds also in the training data.
@@ -114,6 +114,8 @@ Reference values from the run that produced the numbers above: scaffold-grouped 
 - 8 of the 69 compounds (apigenin, harmaline, harmalol, harman, harmine, kaempferol, luteolin, quercetin) are also in at least one training set; their predictions are not independent tests.
 - Herb scores use the highest compound probability; no concentrations are available, and combined effects of compounds are not modelled.
 - The ChEMBL release behind the frozen measurement file is not recorded.
+- The models fit their training data almost perfectly (training AUROC about 0.99); all reported performance is on held-out data.
+- Confidence intervals come from 5 cross-validation folds and a bootstrap that treats compounds as independent, although compounds sharing a scaffold are correlated; the bootstrap intervals are therefore optimistic.
 
 ## Licensing
 
