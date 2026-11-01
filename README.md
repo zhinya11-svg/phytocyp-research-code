@@ -78,6 +78,8 @@ The data sources keep their own licences and terms. Datasets other than the smal
 The merge step was not saved as code, so the file is shipped as retrieved. `scripts/fetch_chembl_activities.py` and `scripts/fetch_chembl_assays.py`
 document how the raw downloads were made. Licences and terms of the data files are listed in `DATA_LICENCES.md`.
 
+SMILES were retrieved from PubChem by CID; the retrieval step is not part of the shipped code.
+
 ## Optional steps (not part of the default run)
 
 **Re-download the ChEMBL records.** `scripts/fetch_chembl_activities.py` and `scripts/fetch_chembl_assays.py` query the ChEMBL web service
