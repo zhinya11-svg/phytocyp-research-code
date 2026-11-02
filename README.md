@@ -117,6 +117,10 @@ Reference values from the run that produced the numbers above: scaffold-grouped 
 - The models fit their training data almost perfectly (training AUROC about 0.99); all reported performance is on held-out data.
 - Confidence intervals come from 5 cross-validation folds and a bootstrap that treats compounds as independent, although compounds sharing a scaffold are correlated; the bootstrap intervals are therefore optimistic.
 
+## Web application
+
+The web application lives in `app/` and is live at https://phytocyp-tracker.streamlit.app.
+
 ## Licensing
 
 The code is under the MIT licence (`LICENSE`). The data files have their own terms, listed in `DATA_LICENCES.md`.

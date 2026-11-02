@@ -1,0 +1,239 @@
+{
+  "training":{
+    "CYP1A2":{
+      "compounds":12549,
+      "percent_inhibitors":46.4,
+      "starting_rows":12579
+    },
+    "CYP2C9":{
+      "compounds":12046,
+      "percent_inhibitors":33.5,
+      "starting_rows":12092
+    },
+    "CYP2C19":{
+      "compounds":12620,
+      "percent_inhibitors":46.0,
+      "starting_rows":12665
+    },
+    "CYP2D6":{
+      "compounds":13086,
+      "percent_inhibitors":19.1,
+      "starting_rows":13130
+    },
+    "CYP3A4":{
+      "compounds":12296,
+      "percent_inhibitors":41.5,
+      "starting_rows":12328
+    }
+  },
+  "herbs":{
+    "selection":{
+      "n_survey_herbs":13,
+      "n_regulator_only_herbs":2,
+      "n_traditional_only_herbs":2
+    },
+    "references":[
+      "Abdel-Aal EM, Rabalski I, Mats L, Rai I. Identification and Quantification of Anthocyanin and Catechin Compounds in Purple Tea Leaves and Flakes. Molecules. 2022;27(19):6676.",
+      "Cosmetic Ingredient Review Expert Panel. Final report on the safety assessment of Aloe species extracts and juices. Int J Toxicol. 2007.",
+      "Dumitrescu E, et al. Pimpinella anisum L. Essential Oil a Valuable Antibacterial and Antifungal Alternative. Plants (Basel). 2023.",
+      "Farzaei MH, et al. Parsley: a review of ethnopharmacology, phytochemistry and biological activities. J Tradit Chin Med. 2013.",
+      "Gholamnezhad Z, et al. Preclinical and clinical effects of Nigella sativa and its constituent, thymoquinone: A review. J Ethnopharmacol. 2016.",
+      "Grulova D, De Martino L, Mancini E, Salamon I, De Feo V. Seasonal variability of the main components in essential oil of Mentha x piperita L. J Sci Food Agric. 2015;95(3):621-7.",
+      "Haro-Gonzalez JN, et al. Clove Essential Oil (Syzygium aromaticum L. Myrtaceae): Extraction, Chemical Composition, Food Applications, and Essential Bioactivity for Human Health. Molecules. 2021.",
+      "Mancak M, Caliskan UK. Are cinnamon derivatives effective and safe for diabetes? Turk J Med Sci. 2024;55(1):313-327.",
+      "Mao QQ, et al. Bioactive Compounds and Bioactivities of Ginger (Zingiber officinale Roscoe). Foods. 2019.",
+      "McKay DL, Blumberg JB. A review of the bioactivity and potential health benefits of chamomile tea (Matricaria recutita L.). Phytother Res. 2006.",
+      "Moloudizargari M, et al. Pharmacological and therapeutic effects of Peganum harmala and its main alkaloids. Pharmacogn Rev. 2013.",
+      "Rather LJ, et al. Ginkgo biloba: The Traditional Use, Phytochemistry, Pharmacology, and Therapeutic Applications. Am J Chin Med. 2025.",
+      "Rocha J, Borges N, Pinho O. Table olives and health: a review. J Nutr Sci. 2020;9:e57.",
+      "Sharma K, Gupta S. Therapeutic Potential of Stable Organosulfur Compounds of Aged Garlic. Cardiovasc Hematol Agents Med Chem. 2023.",
+      "Sorng S, et al. Quality assessment of Curcuma dietary supplements: Complementary data from LC-MS and 1H NMR. J Pharm Biomed Anal. 2022.",
+      "Xie A, et al. Fenugreek Seeds, Leaves, and Derived Ingredients: Chemistry, Structure-Function Relationships, and Food-System Applications. J Agric Food Chem. 2026.",
+      "Yang Y, et al. The Genus Commiphora: An Overview of Its Traditional Uses, Phytochemistry, Pharmacology, and Quality Control. Pharmaceuticals (Basel). 2024."
+    ],
+    "n_herbs":17,
+    "n_compounds":71,
+    "n_distinct_compounds":69,
+    "n_assessable":53,
+    "n_references":17,
+    "n_primary_quantification":5,
+    "n_survey_sources":11,
+    "per_herb":{
+      "Aloe (Aloe vera)":{
+        "compounds":4,
+        "assessable":3,
+        "reference":"Cosmetic Ingredient Review Expert Panel. Final report on the safety assessment of Aloe species extracts and juices. Int J Toxicol. 2007."
+      },
+      "Anise (Pimpinella anisum)":{
+        "compounds":4,
+        "assessable":4,
+        "reference":"Dumitrescu E, et al. Pimpinella anisum L. Essential Oil a Valuable Antibacterial and Antifungal Alternative. Plants (Basel). 2023."
+      },
+      "Black seed (Nigella sativa)":{
+        "compounds":4,
+        "assessable":4,
+        "reference":"Gholamnezhad Z, et al. Preclinical and clinical effects of Nigella sativa and its constituent, thymoquinone: A review. J Ethnopharmacol. 2016."
+      },
+      "Chamomile (Matricaria chamomilla)":{
+        "compounds":5,
+        "assessable":3,
+        "reference":"McKay DL, Blumberg JB. A review of the bioactivity and potential health benefits of chamomile tea (Matricaria recutita L.). Phytother Res. 2006."
+      },
+      "Cinnamon (Cinnamomum verum)":{
+        "compounds":2,
+        "assessable":2,
+        "reference":"Mancak M, Caliskan UK. Are cinnamon derivatives effective and safe for diabetes? Turk J Med Sci. 2024;55(1):313-327."
+      },
+      "Clove (Syzygium aromaticum)":{
+        "compounds":4,
+        "assessable":4,
+        "reference":"Haro-Gonzalez JN, et al. Clove Essential Oil (Syzygium aromaticum L. Myrtaceae): Extraction, Chemical Composition, Food Applications, and Essential Bioactivity for Human Health. Molecules. 2021."
+      },
+      "Fenugreek (Trigonella foenum-graecum)":{
+        "compounds":3,
+        "assessable":3,
+        "reference":"Xie A, et al. Fenugreek Seeds, Leaves, and Derived Ingredients: Chemistry, Structure-Function Relationships, and Food-System Applications. J Agric Food Chem. 2026."
+      },
+      "Garlic (Allium sativum)":{
+        "compounds":5,
+        "assessable":1,
+        "reference":"Sharma K, Gupta S. Therapeutic Potential of Stable Organosulfur Compounds of Aged Garlic. Cardiovasc Hematol Agents Med Chem. 2023."
+      },
+      "Ginger (Zingiber officinale)":{
+        "compounds":5,
+        "assessable":5,
+        "reference":"Mao QQ, et al. Bioactive Compounds and Bioactivities of Ginger (Zingiber officinale Roscoe). Foods. 2019."
+      },
+      "Ginkgo (Ginkgo biloba)":{
+        "compounds":6,
+        "assessable":5,
+        "reference":"Rather LJ, et al. Ginkgo biloba: The Traditional Use, Phytochemistry, Pharmacology, and Therapeutic Applications. Am J Chin Med. 2025."
+      },
+      "Green tea (Camellia sinensis)":{
+        "compounds":5,
+        "assessable":5,
+        "reference":"Abdel-Aal EM, Rabalski I, Mats L, Rai I. Identification and Quantification of Anthocyanin and Catechin Compounds in Purple Tea Leaves and Flakes. Molecules. 2022;27(19):6676."
+      },
+      "Harmal (Peganum harmala)":{
+        "compounds":5,
+        "assessable":4,
+        "reference":"Moloudizargari M, et al. Pharmacological and therapeutic effects of Peganum harmala and its main alkaloids. Pharmacogn Rev. 2013."
+      },
+      "Myrrh (Commiphora myrrha)":{
+        "compounds":4,
+        "assessable":0,
+        "reference":"Yang Y, et al. The Genus Commiphora: An Overview of Its Traditional Uses, Phytochemistry, Pharmacology, and Quality Control. Pharmaceuticals (Basel). 2024."
+      },
+      "Olive (Olea europaea)":{
+        "compounds":4,
+        "assessable":2,
+        "reference":"Rocha J, Borges N, Pinho O. Table olives and health: a review. J Nutr Sci. 2020;9:e57."
+      },
+      "Parsley (Petroselinum crispum)":{
+        "compounds":4,
+        "assessable":3,
+        "reference":"Farzaei MH, et al. Parsley: a review of ethnopharmacology, phytochemistry and biological activities. J Tradit Chin Med. 2013."
+      },
+      "Peppermint (Mentha piperita)":{
+        "compounds":3,
+        "assessable":1,
+        "reference":"Grulova D, De Martino L, Mancini E, Salamon I, De Feo V. Seasonal variability of the main components in essential oil of Mentha x piperita L. J Sci Food Agric. 2015;95(3):621-7."
+      },
+      "Turmeric (Curcuma longa)":{
+        "compounds":4,
+        "assessable":4,
+        "reference":"Sorng S, et al. Quality assessment of Curcuma dietary supplements: Complementary data from LC-MS and 1H NMR. J Pharm Biomed Anal. 2022."
+      }
+    }
+  },
+  "drugs":{
+    "n_drugs":97,
+    "n_drug_enzyme_rows":99,
+    "n_sensitive":59,
+    "n_moderate":40,
+    "n_nti_drugs":6,
+    "nti_drug_names":[
+      "S-warfarin",
+      "everolimus",
+      "phenytoin",
+      "sirolimus",
+      "tacrolimus",
+      "theophylline"
+    ],
+    "n_nti_pairs":29,
+    "substrate_source":"FDA, Drug Development and Drug Interactions: Examples of Drugs that Interact with CYP Enzymes and Transporter Systems; retrieved 26 Oct 2026",
+    "nti_source":"Donnelly M, et al. Narrow Therapeutic Index Drugs: FDA Experience, Views, and Operations. Clin Pharmacol Ther. 2024;117(1):116-129. PMID 39529254. FDA publishes no consolidated public NTI list."
+  },
+  "reference":{
+    "n_measurements":248,
+    "n_independent":125,
+    "n_same_source_as_training":123,
+    "n_supported":33,
+    "n_contradicted":82,
+    "n_untested":308,
+    "n_pairs":423,
+    "n_tested":115
+  },
+  "guide":{
+    "n_herbs_checked":12,
+    "n_with_page":8,
+    "n_without_page":4,
+    "herbs_without_page":[
+      "Anise",
+      "Clove",
+      "Harmal",
+      "Parsley"
+    ],
+    "date_checked":"2026-10-29"
+  },
+  "in_training":{
+    "n_compounds":8,
+    "n_distinct_compounds":69,
+    "names":[
+      "apigenin",
+      "harmaline",
+      "harmalol",
+      "harman",
+      "harmine",
+      "kaempferol",
+      "luteolin",
+      "quercetin"
+    ],
+    "per_enzyme":{
+      "CYP1A2":[
+        "harmaline",
+        "harmalol",
+        "harmine",
+        "kaempferol",
+        "luteolin",
+        "quercetin"
+      ],
+      "CYP2C9":[
+        "apigenin",
+        "harmaline",
+        "harmalol",
+        "harmine",
+        "luteolin"
+      ],
+      "CYP2C19":[
+        "harmaline",
+        "harmalol",
+        "harmine",
+        "luteolin",
+        "quercetin"
+      ],
+      "CYP2D6":[
+        "apigenin",
+        "harmaline",
+        "harman",
+        "kaempferol",
+        "luteolin",
+        "quercetin"
+      ],
+      "CYP3A4":[
+        "harmalol",
+        "quercetin"
+      ]
+    }
+  }
+}
