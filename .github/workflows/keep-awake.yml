@@ -1,0 +1,38 @@
+name: Keep Streamlit app awake
+
+on:
+  schedule:
+    - cron: "17 */6 * * *"   # every 6 hours
+  workflow_dispatch:          # lets me run it by hand
+
+jobs:
+  wake:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install headless browser
+        run: |
+          pip install playwright
+          python -m playwright install --with-deps chromium
+      - name: Visit the app and wake it if asleep
+        run: |
+          python - <<'EOF'
+          from playwright.sync_api import sync_playwright
+          URL = "https://phytocyp-tracker.streamlit.app"
+          with sync_playwright() as p:
+              browser = p.chromium.launch()
+              page = browser.new_page()
+              page.goto(URL, timeout=120000)
+              page.wait_for_timeout(15000)
+              button = page.get_by_role("button", name="Yes, get this app back up!")
+              if button.count() > 0:
+                  print("App was asleep - waking it up")
+                  button.first.click()
+                  page.wait_for_timeout(60000)
+              else:
+                  print("App is awake")
+              browser.close()
+          EOF
